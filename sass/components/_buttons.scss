@@ -1,0 +1,51 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    border: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  //Header Button on homepage - starts here
+
+  &-primary {
+    margin-top: 5rem;
+    background-color: $color-secondary;
+    transition: all 0.3s;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-0.3rem);
+    }
+  }
+
+  &-primary::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0.8rem;
+    background-color: $color-secondary;
+    z-index: -2;
+    transition: all 0.5s;
+  }
+
+  &-primary:hover::after {
+    transform: scaleX(1.6) scaleY(1.8);
+    opacity: 0;
+  }
+
+  &-form {
+    margin-top: 0;
+  }
+
+  //Header Button on homepage - ends here
+}

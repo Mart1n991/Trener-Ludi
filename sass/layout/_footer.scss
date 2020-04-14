@@ -1,0 +1,18 @@
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.link {
+
+    color: $color-secondary;
+    font-weight: 400;
+    transition: transform .2s;
+    text-decoration: none;
+    position: relative;    
+}
+

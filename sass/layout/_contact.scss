@@ -1,0 +1,50 @@
+.section-contact {
+    height: 100vh;
+    background-image: url(../../img/Kontakt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    background-color: rgba($color-primary-light, 0.3);
+    width: 40%;
+    padding: 3rem 10rem;
+    border-radius: 10px;
+
+    @media only screen and(max-width: $bp-large) {
+        width: 100%;
+      }
+}
+
+.form {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    align-items: center;
+
+    &__group:nth-child(3), 
+    &__group:nth-child(4),
+    &__group:nth-child(5) {
+        grid-column: 1 / span 2;
+    }
+
+    &__group:nth-child(5) {
+        justify-self: center;
+    }
+    
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+
+    }
+
+    &__input {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 1rem 1rem;
+        border-radius: 5px;
+        border: 1px solid $color-primary-light;
+        font-family: inherit;
+    }
+}
+

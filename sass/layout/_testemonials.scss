@@ -1,0 +1,42 @@
+.testemonials {
+
+    &__img {
+        width: 25%;
+        border-radius: 100px;
+        transform: translateY(-5rem);
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-column-gap: 5rem;
+        grid-row-gap: 10rem;
+        justify-items: start;
+        margin: 10rem 5rem 0 5rem;
+    }
+
+    &__card {
+        // height: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-grey-light-1;
+        border-radius: 4rem;
+    }
+
+    &__details {
+        padding: 0 6rem 6rem 6rem;
+        font-size: 1.2rem;
+        position: relative;
+    }
+}
+
+.blockquote::before {
+    content: '\201c';
+    position: absolute;
+    top: -8rem;
+    left: 5rem;
+    font-size: 20rem;
+    display: block;
+    color: rgba($color-primary-light, .3);
+}

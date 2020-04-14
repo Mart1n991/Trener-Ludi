@@ -1,0 +1,145 @@
+.card {
+
+    //Funcionality
+    perspective: 150rem;
+    height: 48rem;
+    position: relative;
+
+    &__side {
+        position: absolute;
+        height: 48rem;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        overflow: hidden;
+        box-shadow: 0 .2rem .9rem black;
+
+        transition: all 0.8s ease;
+
+
+        &--front {
+            background-color: $color-primary-light;
+        }
+
+        &--back {
+            background-color: $color-grey-light-1;
+            transform: rotateY(180deg);
+
+            //Position elements
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    &:hover 
+    &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover 
+    &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    //Front side styling
+
+    &__picture {
+        background-size: cover;
+        height: 24rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        &-1 {
+            background-image: url(../../img/Service1_Osobné_tréningy.jpg);  
+        }
+
+        &-2 {
+            background-image: url(../../img/Service2_Mentoring.jpg);  
+        }
+
+        &-3 {
+            background-image: url(../../img/Service3_Konzultáce.jpg);  
+        }
+
+        &-4 {
+            background-image: url(../../img/Service4_Vzdelávanie.jpg);  
+        }
+
+        &-5 {
+            background-image: url(../../img/Service5_Zadarmo.jpg);  
+        }
+
+        &-6 {
+            background-image: url(../img/Service6_Akcie_naživo.jpg);  
+        }
+    }
+
+    &__heading {
+        position: absolute;
+        top: 21.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $color-secondary;
+        width: 80%;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        color: #fff;
+    }
+
+    &__details {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 4rem 3rem;
+    }
+}
+
+.btn__service {
+    font-size: 1.8rem;
+    border-radius: 10rem;
+    bottom: 2rem;
+    padding: 1.2rem 2.5rem;
+    color: #fff;
+    cursor: pointer;
+
+    &--front {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid #fff;
+        background-color: transparent;
+    }
+
+    &--back {
+        background-color: $color-secondary;
+        border: none;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}
+
+// Card back side icon
+
+.service {
+    &__icon {
+    width: 10rem;
+    margin-top: 4rem;
+    }
+
+    &-text {
+        font-size: 1.4rem;
+        margin: 2rem 3rem;
+
+    }
+}
