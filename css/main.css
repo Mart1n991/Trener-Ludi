@@ -462,7 +462,7 @@ body {
 
 .section-contact {
   height: 100vh;
-  background-image: url(../../img/Kontakt.png);
+  background-image: url(../img/Kontakt.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -646,27 +646,27 @@ body {
 }
 
 .card__picture-1 {
-  background-image: url(../../img/Service1_Osobné_tréningy.jpg);
+  background-image: url(../img/Service1_Osobné_tréningy.jpg);
 }
 
 .card__picture-2 {
-  background-image: url(../../img/Service2_Mentoring.jpg);
+  background-image: url(../img/Service2_Mentoring.jpg);
 }
 
 .card__picture-3 {
-  background-image: url(../../img/Service3_Konzultáce.jpg);
+  background-image: url(../img/Service3_Konzultáce.jpg);
 }
 
 .card__picture-4 {
-  background-image: url(../../img/Service4_Vzdelávanie.jpg);
+  background-image: url(../img/Service4_Vzdelávanie.jpg);
 }
 
 .card__picture-5 {
-  background-image: url(../../img/Service5_Zadarmo.jpg);
+  background-image: url(../img/Service5_Zadarmo.jpg);
 }
 
 .card__picture-6 {
-  background-image: url(../../img/Service6_Akcie_naživo.jpg);
+  background-image: url(../img/Service6_Akcie_naživo.jpg);
 }
 
 .card__heading {
